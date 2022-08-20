@@ -26,6 +26,7 @@ start and stop it again. Make sure the duration value each time is calculated pr
 			if (userInput.ToLower() == "start")
 			{
 				MystopWatch.Start();
+				Console.WriteLine("You started at {0}", MystopWatch.TheStartTime.ToString("yyyy-MM-dd & HH:mm:ss"));
 			}
 			else
 			{
@@ -41,6 +42,8 @@ start and stop it again. Make sure the duration value each time is calculated pr
 			if (userInput.ToLower() == "stop")
 			{
 				MystopWatch.Stop();
+				Console.WriteLine("You Stopped at {0}", MystopWatch.TheStopTime.ToString("yyyy-MM-dd & HH:mm:ss"));
+				Console.WriteLine($"The Duration is :({MystopWatch.Duration()})");
 
 			}
 			else
@@ -51,7 +54,8 @@ start and stop it again. Make sure the duration value each time is calculated pr
 					Console.WriteLine("Type 'stop' to End ^__^");
 				}
 				MystopWatch.Stop();
-
+				Console.WriteLine("You Stopped at {0}", MystopWatch.TheStopTime.ToString("yyyy-MM-dd & HH:mm:ss"));
+				Console.WriteLine($"The Duration is :({MystopWatch.Duration()})");
 			}
 			Console.ReadKey();
 

@@ -14,7 +14,7 @@ namespace Task1
 		public void Start()
 		{		
 				TheStartTime = DateTime.Now;
-				Console.WriteLine("You started at {0}", TheStartTime.ToString("yyyy-MM-dd & HH:mm:ss"));	
+					
 		}
 
 		public string Duration()
@@ -25,8 +25,6 @@ namespace Task1
 		public void Stop()
 		{
 				TheStopTime = DateTime.Now;
-				Console.WriteLine("You Stopped at {0}", TheStopTime.ToString("yyyy-MM-dd & HH:mm:ss"));
-				Console.WriteLine($"The Duration is :({Duration()})");
 		}
 
 	}
